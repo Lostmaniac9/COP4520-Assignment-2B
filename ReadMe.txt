@@ -1,4 +1,4 @@
-# COP4520-Assignment-2B
+To execute this program, type "javac Guest.java" followed by "java Guest".
 
 The solution to this problem of viewing the Minotaur's Crystal Vase is the third strategy.
 This problem boils down to dealing with threads contesting with each other for a lock, each solution being a different kind of lock.
