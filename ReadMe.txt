@@ -12,3 +12,13 @@ This will result in the threads being pleasent while they wait, but once the loc
 The third strategy is using a queue-based lock, and as we studied in class, this is the best way to deal with this problem.
 This will force the threads to enter the lock in a specific order, and also to not starve each other in some mad dash.
 It keeps the communication bus cleared, and it is easy on the computer as a whole.
+
+As for my implementation, the main method will start up 8 threads to organize into the lock and view the vase in order.
+As this happens, the message "Thread n is viewing the vase....", where "n" is the is of the thread in the lock.
+Each thread has a 1 in 3 chance to choose to view the vase again, and they can repeat this as many times as they want.
+Once every thread is done viewing the vase, the program outputs "Guests are done viewing the vase." to the console and the program terminates.
+
+Resources referenced:
+https://github.com/javaf/mcs-lock
+https://stackoverflow.com/questions/48267188/problems-in-mcs-lock-implementation-java
+The Art of Multiprocessor Programming, chapter 7, page 162
